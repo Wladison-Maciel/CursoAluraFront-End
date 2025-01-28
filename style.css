@@ -49,7 +49,7 @@ body {
 }
 
 .sidebar nav ul li a .add-icon {
-    font-size: 12px;
+    font-size: 10px;
     margin-left: auto;
     color: #b3b3b3;
 }
@@ -115,6 +115,49 @@ body {
     background-color: #f0f0f0;
 }
 
-.library-header .fa-plus {
-    font-size: 16px; /* Ajuste o tamanho conforme necessário */
+/* Cookies Section */
+.cookies {
+    margin-top: 20px;
+    text-align: center;
+    color: #b3b3b3;
+    font-family: "DM Sans", sans-serif;
+}
+
+.cookies p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.planet-button {
+    background-color: transparent;
+    color: #fff;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+}
+
+.planet-button span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.planet-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #f0f0f0;
+}
+
+.cookies {
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    color: #b3b3b3;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 30px;
 }
