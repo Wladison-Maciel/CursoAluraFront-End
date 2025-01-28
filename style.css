@@ -1,46 +1,120 @@
-body{
+body {
     background-color: #000;
 }
 
-.sidebar{
-    position:fixed;
-    top:0;
-    left:0;
-    bottom:0;
-    padding:12px;
-    width:300px;
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
 }
 
-.sidebar__navigation{
+.sidebar__navigation {
     background-color: #121212;
-    border-radius:8px;
-    padding:16px 0 0 16px;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
 }
 
-.logo{
+.logo {
     background: #121212;
-    display:flex;
-    border-radius:8px ;
-    padding:16px 0 0 16px;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
 }
 
-.sidebar__navigation .logo img{
-    width:80px;
+.sidebar__navigation .logo img {
+    width: 80px;
 }
 
-.sidebar nav ul{
+.sidebar nav ul {
     margin-top: 20px;
-    padding:0 20px 10px 20px;
+    padding: 0 20px 10px 20px;
 }
 
-.sidebar ul li{
+.sidebar ul li {
     padding: 10px 0;
 }
 
-.sidebar nav ul li a{
+.sidebar nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar nav ul li a .add-icon {
+    font-size: 12px;
+    margin-left: auto;
+    color: #b3b3b3;
+}
+
+.library {
+    margin-top: 20px;
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 16px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+
+.library-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.library-header span {
+    font-size: 24px;
+    color: #fff;
+}
+
+.library-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.playlist {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+.playlist h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.playlist p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.playlist button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.playlist button:hover {
+    background-color: #f0f0f0;
+}
+
+.library-header .fa-plus {
+    font-size: 16px; /* Ajuste o tamanho conforme necessário */
 }
