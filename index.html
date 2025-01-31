@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/siderbar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" />
 </head>
 
 <body>
@@ -18,7 +20,7 @@
         <nav class="sidebar__navigation">
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="Logo" />
+                    <img src="./src/assets/icons/logo-spotify.png" alt="Logo" />
                 </a>
             </div>
             <ul>
@@ -39,27 +41,50 @@
 
         <!-- Biblioteca Section -->
         <div class="library">
-    <div class="library-header">
-        <span class="fa fa-book"></span>
-        <h2>Sua Biblioteca</h2>
-        <span class="fa fa-plus"></span>
-    </div>
-    <div class="playlist">
-        <h3>Crie sua primeira playlist</h3>
-        <p>É fácil, vamos te ajudar</p>
-        <button>Criar Playlist</button>
+            <div class="library-header">
+                <span class="fa fa-book"></span>
+                <h2>Sua Biblioteca</h2>
+                <span class="fa fa-plus"></span>
+            </div>
+            <div class="playlist">
+                <h3>Crie sua primeira playlist</h3>
+                <p>É fácil, vamos te ajudar</p>
+                <button>Criar Playlist</button>
+            </div>
+
+            <!-- Cookies Section -->
+            <div class="cookies">
+                <p>Cookies</p>
+                <button class="planet-button">
+                    <span class="fa fa-globe"></span>
+                    Português do Brasil
+                </button>
+            </div>
+        </div>
     </div>
 
-    <!-- Cookies Section -->
-    <div class="cookies">
-        <p>Cookies</p>
-        <button class="planet-button">
-            <span class="fa fa-globe"></span>
-            Português do Brasil
-        </button>
-    </div>
-</div>
-    </div>
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
 </body>
 
 </html>
